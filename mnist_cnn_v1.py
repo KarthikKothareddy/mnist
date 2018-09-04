@@ -166,11 +166,6 @@ def main(mnist):
 
 if __name__ == "__main__":
 
-    # proxy crap
-    import os
-    os.environ["HTTP_PROXY"] = "http://proxy-web.micron.com:80"
-    os.environ["HTTPS_PROXY"] = "https://proxy-web.micron.com:80"
-    os.environ["NO_PROXY"] = ".micron.com,localhost"
     from tensorflow.examples.tutorials.mnist import input_data
     mnist = input_data.read_data_sets("./src/MNIST_data/",one_hot=True)
     main(mnist)
