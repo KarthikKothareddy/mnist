@@ -140,7 +140,7 @@ def main(mnist):
 
     init = tf.global_variables_initializer()
 
-    epochs = 1000
+    epochs = 50000
 
     with tf.Session() as sess:
         sess.run(init)
